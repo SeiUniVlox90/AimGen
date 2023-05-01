@@ -1,0 +1,150 @@
+local Aimbot = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Aimbot_2 = Instance.new("TextButton")
+local Silent = Instance.new("TextButton")
+local close = Instance.new("ImageButton")
+local TextLabel_3 = Instance.new("TextLabel")
+
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = Aimbot
+Main.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+Main.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Main.BorderSizePixel = 2
+Main.Position = UDim2.new(0.393390179, 0, 0.369477898, 0)
+Main.Size = UDim2.new(0, 200, 0, 130)
+Main.Active = true
+Main.Draggable= true
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0, 78, 0, 30)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Aimbot"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0, 0, 0.138461545, 0)
+TextLabel_2.Size = UDim2.new(0, 65, 0, 23)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "#Raigen"
+TextLabel_2.TextColor3 = Color3.fromRGB(103, 103, 103)
+
+Aimbot_2.Name = "Aimbot"
+Aimbot_2.Parent = Main
+Aimbot_2.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Aimbot_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Aimbot_2.BorderSizePixel = 2
+Aimbot_2.Position = UDim2.new(0.049999997, 0, 0.376923084, 0)
+Aimbot_2.Size = UDim2.new(0, 180, 0, 25)
+Aimbot_2.Font = Enum.Font.GothamBold
+Aimbot_2.Text = "AIMBOT/HIGHLIGHT : OFF"
+Aimbot_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aimbot_2.TextSize = 10.000
+
+Silent.Name = "Silent"
+Silent.Parent = Main
+Silent.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Silent.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Silent.BorderSizePixel = 2
+Silent.Position = UDim2.new(0.049999997, 0, 0.623076916, 0)
+Silent.Size = UDim2.new(0, 180, 0, 25)
+Silent.Font = Enum.Font.GothamBold
+Silent.Text = "SILENT AIM"
+Silent.TextColor3 = Color3.fromRGB(255, 255, 255)
+Silent.TextSize = 10.000
+
+close.Name = "close"
+close.Parent = Main
+close.BackgroundTransparency = 1.000
+close.LayoutOrder = 1
+close.Position = UDim2.new(0.824999988, 0, 0.0384615362, 0)
+close.Size = UDim2.new(0, 25, 0, 25)
+close.ZIndex = 2
+close.Image = "rbxassetid://3926305904"
+close.ImageRectOffset = Vector2.new(284, 4)
+close.ImageRectSize = Vector2.new(24, 24)
+
+TextLabel_3.Parent = Main
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.0900000036, 0, 0.86153847, 0)
+TextLabel_3.Size = UDim2.new(0, 166, 0, 14)
+TextLabel_3.Font = Enum.Font.GothamBold
+TextLabel_3.Text = "MOBILE SCRIPT"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+local function FWWSEU_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	local Aim = script.Parent.Aimbot
+	local Sil = script.Parent.Silent
+	
+	Aim.MouseButton1Click:Connect(function()
+		Aim.Text = "AIMBOT/HIGHLIGHT: ON"
+		local fnl = loadstring(game:HttpGetAsync 'https://raw.githubusercontent.com/Code1Tech/utils/main/notification.lua')()
+	
+		function notify(title, text, duration)
+			title = title or "Notification"
+			text = text or "No text provided."
+			duration = duration or 5
+	
+			fnl:MakeNotification({
+				Title = title,
+				Text = text,
+				Duration = duration
+			})
+		end
+		
+		notify("Discord", "https://discord.gg/JnjmKH7e", 10)
+		notify("AimGen", "AIMBOT ON!", 5)
+		wait(0.5)
+		local esp_settings = { ---- table for esp settings 
+			textsize = 8,
+			colour = 255,255,255
+		}
+	
+		local gui = Instance.new("BillboardGui")
+		local esp = Instance.new("TextLabel",gui) ---- new instances to make the billboard gui and the textlabel
+	
+	
+	
+		gui.Name = "Cracked esp"; ---- properties of the esp
+		gui.ResetOnSpawn = false
+		gui.AlwaysOnTop = true;
+		gui.LightInfluence = 0;
+		gui.Size = UDim2.new(1.75, 0, 1.75, 0);
+		esp.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+		esp.Text = ""
+		esp.Size = UDim2.new(0.0001, 0.00001, 0.0001, 0.00001);
+		esp.BorderSizePixel = 4;
+		esp.BorderColor3 = Color3.new(esp_settings.colour)
+		esp.BorderSizePixel = 0
+		esp.Font = "GothamSemibold"
+		esp.TextSize = esp_settings.textsize
+		esp.TextColor3 = Color3.fromRGB(esp_settings.colour) -- text colour
+	
+		game:GetService("RunService").RenderStepped:Connect(function() ---- loops faster than a while loop :)
+			for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+				if v ~= game:GetService("Players").LocalPlayer and v.Character.Head:FindFirstChild("Cracked esp")==nil  then -- craeting checks for team check, local player etc
+					esp.Text = "{"..v.Name.."}"
+					gui:Clone().Parent = v.Character.Head
+				end
+			end
+		end)
+	end)
+	
+	Sil.MouseButton1Click:Connect(function()
+			
+	end)
+end
+coroutine.wrap(FWWSEU_fake_script)()
